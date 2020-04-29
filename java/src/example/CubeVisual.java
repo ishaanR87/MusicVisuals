@@ -10,7 +10,7 @@ public class CubeVisual extends Visual
     {
         size(800, 800, P3D);
         println("CWD: " + System.getProperty("user.dir"));
-        //fullScreen(P3D, SPAN);
+        //sfullScreen(P3D, SPAN);
     }
 
     public void keyPressed()
