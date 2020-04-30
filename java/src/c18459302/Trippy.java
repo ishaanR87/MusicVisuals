@@ -42,7 +42,38 @@ public class Trippy extends Visual
       Song = minim.loadFile("NoTime.mp3"); //song variable now contains the song
       Song.play(); //play function plays song
       //startListening(); 
+  }
+  public void draw()
+  {
+    fill(0);// fills rectangle black
+    noStroke();
+    rect(0, 0, width, height); //rectangle size is the width and height of screen
+    translate(width/2, height/2);//this allows the centra
+
+    
+    for (int i = 0; i < Song.bufferSize()- 1; i++) //increments through the length of the song
+    {
+      float angle = sin(i+(Twirl1-3))*30;
+      float x = sin(radians(i))*(Twirl1/angle);
+
+      float leftLevel = Song.left.level() * 20;
+      ellipse(i,i, leftLevel, leftLevel);
+      rotateZ((float) (Twirl1*PI/3*0.05));
+
+      //fill( random(255), random(255), random(255), random(255));
+      fill(255);
       
+    
+    }   
+
+    
+  
+
+    Twirl1 += 0.2;
+    Twirl2 += SpeedOfTwirl;
+    Twirl3 += SpeedOfTwirl;
+
   }
 }
+
 
