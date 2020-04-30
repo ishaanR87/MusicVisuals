@@ -1,12 +1,18 @@
 package c18459302;
 
 import ie.tudublin.Visual;
+import ddf.minim.*;
 
 
 
 public class Trippy extends Visual
 {
-
+  //declare variables 
+  float Twirl1;// Main loop
+  float Twirl2;
+  float Twirl3;
+  float SpeedOfTwirl;//Speed of the loop
+  AudioPlayer Song;//The song needed for iteration for elipses
 
   public void settings()
   {
@@ -32,9 +38,9 @@ public class Trippy extends Visual
       
       setFrameSize(256);
 
-      startMinim();
-      loadAudio("NoTime.mp3");
-      getAudioPlayer().play();
+      Minim minim = new Minim(this);
+      Song = minim.loadFile("NoTime.mp3"); //song variable now contains the song
+      Song.play(); //play function plays song
       //startListening(); 
       
   }
