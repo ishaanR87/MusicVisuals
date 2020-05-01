@@ -8,9 +8,7 @@ import ddf.minim.*;
 public class Trippy extends Visual
 {
   //declare variables 
-  float Twirl1;// Main loop
-  float Twirl2;
-  float Twirl3;
+  float Twirl;// Main loop
   float SpeedOfTwirl;//Speed of the loop
   AudioPlayer Song;//The song needed for iteration for elipses
 
@@ -45,35 +43,26 @@ public class Trippy extends Visual
   }
   public void draw()
   {
-    fill(0);// fills rectangle black
+    Twirl += 0.006; //speed of twirls on screen
+
+    fill(0,20);// fills rectangle black with droopy effect
     noStroke();
     rect(0, 0, width, height); //rectangle size is the width and height of screen
-    translate(width/2, height/2);//this allows the centra
+    translate(width/2, height/2);//this moves twirl to half the width, half the length (center of screen)
 
     
-    for (int i = 0; i < Song.bufferSize()- 1; i++) //increments through the length of the song
+    for (int i = 0; i < Song.bufferSize(); i++) //increments through the length of the song
     {
-      float angle = sin(i+(Twirl1-3))*30;
-      float x = sin(radians(i))*(Twirl1/angle);
+      float angle = sin(i+(Twirl-2))*25;
+      float Twist = sin(radians(i))*(Twirl/angle); //sin wave formed with each part of the song which accelerates with the speed 
 
       float leftLevel = Song.left.level() * 20;
-      ellipse(i,i, leftLevel, leftLevel);
-      rotateZ((float) (Twirl1*PI/3*0.05));
+      ellipse(i,i, leftLevel, leftLevel); //creates the circles in the twirls
+      rotateZ((float) (Twirl*PI/3*0.08)); //how fast twirls rotate
 
-      //fill( random(255), random(255), random(255), random(255));
-      fill(255);
-      
-    
-    }   
-
-    
-  
-
-    Twirl1 += 0.2;
-    Twirl2 += SpeedOfTwirl;
-    Twirl3 += SpeedOfTwirl;
-
+      //fill( random(255), random(255), random(255), random(255)); //this is multicoloured twirls
+      fill(255); //purple colour
+    } 
   }
 }
-
 
