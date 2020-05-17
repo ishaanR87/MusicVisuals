@@ -7,16 +7,17 @@ public class WaveForm
 {
     Trippy Trip;
     float cy = 0;
+    
 
-    public WaveForm(Trippy trippy)
+    public WaveForm(Trippy Trip)
     {
-        this.Trip= trippy;
+        this.Trip = Trip;
         cy = this.Trip.height / 2;
     }
 
     public void render()
     {
-    
+        Trip.colorMode(PApplet.HSB);
         for(int i = 0 ; i < Trip.getAudioBuffer().size() ; i ++)
         {
             Trip.stroke(
@@ -25,7 +26,7 @@ public class WaveForm
                 , 255
             );
 
-            Trip.line(i, cy, i, cy + cy * Trip.getAudioBuffer().get(i));
+            Trip.line(cy, cy, i, cy + cy * Trip.getAudioBuffer().get(i));
         }
     }
 }

@@ -9,8 +9,7 @@ public class Trippy extends Visual
 {
   
   WaveForm wf;
-  AudioBandsVisual abv;
-  Wavey wvy;
+  Bars bar;
   float Twirl;// Main loop
   float SpeedOfTwirl;//Speed of the loop
 
@@ -36,11 +35,11 @@ public class Trippy extends Visual
   {
       startMinim();
 
-      loadAudio("NoTime.mp3");
-      getAudioPlayer().play();
+      loadAudio("NoTime.mp3"); //loads song
+      getAudioPlayer().play(); //plays song
       //startListening(); 
       wf = new WaveForm(this);
-      wvy = new Wavey(this);
+      bar = new Bars(this);
 
   }
   
@@ -88,14 +87,14 @@ public class Trippy extends Visual
   
       }
 
-      if(key == '2')
+      if(key == '2') // if 2 is pressed
       {
-        wf.render();
+        wf.render(); // render method in Waveform is called
       }
 
-      if(key == '3')
+      if(key == '3') //if 3 is pressed
       {
-        wvy.bars();
+        bar.bars(); //bars method in Bars file is called
       }
 
   

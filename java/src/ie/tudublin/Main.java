@@ -10,13 +10,6 @@ public class Main
 		String[] a = {"MAIN"};
 		processing.core.PApplet.runSketch( a, new Trippy());	
 	}
-
-	public void example()
-	{
-		String[] a = {"MAIN"};
-		processing.core.PApplet.runSketch( a, new RotatingAudioBands());	
-	}
-
 	
 	public static void main(String[] args)
 	{
