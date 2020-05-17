@@ -12,6 +12,7 @@ Student Number: C18459302
 - Check out the WaveForm and AudioBandsVisual for examples of how to call the Processing functions from other classes that are not subclasses of PApplet
 
 # Description of the assignment
+The goal for this assignment was create something you could enjoy looking at while listening to music. The main focus of this assigmnet was to create various different shapes/patterns that would alter their form in the precense of audio. The main source for my project are the previous programs we have created with Bryan. As someone who is a big fan of psychedelic themes such as concerts and festivals, I knew that this assignment would be fun to work on. I kept most thing particulary simple and my assignment consists of 3 different alterations of shapes/patterns.
 
 # Instructions
 
