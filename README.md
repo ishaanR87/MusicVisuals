@@ -85,20 +85,8 @@ That is all to my instructions for the program.
 
 
 # What I am most proud of in the assignment
+What I am most proud of is actually creating something what the assignment had asked me tp do. By this I mean, creating something that I could look at while listening to music. The design I have included in my porject are really asethetically pleasing and to top it off, having my genre of music playing in the background perfect. I really enjoyed making stuff in this assignment react to music. I also really enjoyed messing around with the code and seeing what different effects it would have if certain variables were changed here and there. Despite the finalised version being quite basic, overall, I am very satisfied with my assignment.
 
-
-This is a [hyperlink](http://bryanduggan.org)
-
-
-
-
-This is an image using a relative URL:
-
-![An image](images/p8.png)
-
-This is an image using an absolute URL:
-
-![A different image](https://bryanduggandotorg.files.wordpress.com/2019/02/infinite-forms-00045.png?w=595&h=&zoom=2)
 
 This is a youtube video:
 
