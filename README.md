@@ -90,7 +90,7 @@ What I am most proud of is actually creating something what the assignment had a
 
 This is a youtube video:
 
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
+https://youtu.be/CnHknEf5gpY
 
 This is a table highlighting the different tasks of my program:
 
